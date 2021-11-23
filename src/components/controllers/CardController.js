@@ -9,6 +9,7 @@ const CardController = () => {
   const location = useLocation();
   const [show, setShow] = useState(false);
   const navigate = useNavigate();
+
   const checkoutHandler = () => {
     const total = getTotal();
 

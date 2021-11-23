@@ -6,7 +6,6 @@ body::before {
 .discover{
   position: relative; 
 }
-  
 .shop-now-btn{
   position: absolute;
   top: 80%;
@@ -15,9 +14,6 @@ body::before {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
-.announ-bar{
-  background-color: #F4DCE2;
-}
 .text-justify{ 
   text-align: justify;
 }
@@ -25,9 +21,7 @@ body::before {
   border-bottom-style: 2px solid ;
   border-color: #F4DCE2;   
 }
-.customized-btn,.customized-btn:hover{
+.customized-btn,.customized-btn:hover, .announcement-bar{
   background-color: #F4DCE2;
+  border:0px
 }
-
-  
-  

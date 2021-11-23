@@ -4,68 +4,43 @@
       "imageSrc" : "/images/brands/butter.png"
     },
     {
-     
       "imageLink": "https://colourpop.com/",
       "imageSrc" : "/images/brands/colourpop.png"
     },
     {
-      
       "imageLink": "https://dior.com",
       "imageSrc" : "/images/brands/dior.png"
-    
     },
-  
     {
-      
       "imageLink": "https://www.drhauschka.nl/",
       "imageSrc" : "/images/brands/dr.png"
-     
     },
     {
-     
       "imageLink": "https://www.essie.com/",
       "imageSrc" : "/images/brands/essie.png"
-    
     },
     {
-      
       "imageLink": "https://www.loreal.com/en/",
       "imageSrc" : "/images/brands/loreal.png"
-    
     },
     {
-      
       "imageLink": "https://www.groupemarcelle.com/",
       "imageSrc" : "/images/brands/marcelle.png"
-    
-    }
-    ,
+    },
     {
-      
       "imageLink": "https://www.maybelline.com/",
       "imageSrc" : "/images/brands/maybelline.png"
-    
-    }
-    ,
+    },
     {
-      
       "imageLink": "https://www.milanicosmetics.com/",
       "imageSrc" : "/images/brands/milani.png"
-    
-    }
-    ,
+    },
     {
-      
       "imageLink": "https://www.nyxcosmetics.com/",
       "imageSrc" : "/images/brands/nyx.png"
-    
-    }
-    ,
+    },
     {
-      
       "imageLink": "https://www.revlon.com/",
       "imageSrc" : "/images/brands/revlon.png"
-    
     }
-    
   ]

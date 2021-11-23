@@ -6,10 +6,7 @@ import { RadioGroup } from "@headlessui/react";
 import { CardContext } from "../contexts/CardContext";
 import { Alert, Container, Spinner } from "react-bootstrap";
 import { PRODUCT_URL } from "../data/constants";
-
-const classNames = (...classes) => {
-  return classes.filter(Boolean).join(" ");
-};
+import { classNames } from "../helpers/utilityfuncs";
 
 export const ProductDetails = () => {
   const { id } = useParams();
@@ -78,7 +75,7 @@ export const ProductDetails = () => {
                             color.selectedClass,
                             active && checked ? "ring ring-offset-1" : "",
                             !active && checked ? "ring-2" : "",
-                            "-m-0.5 relative p-0.5 rounded-full flex items-center justify-center cursor-pointer focus:outline-none"
+                            "-m-0.5 relative p-0.5  rounded-full flex items-center justify-center cursor-pointer focus:outline-none "
                           )
                         }
                       >
@@ -104,9 +101,11 @@ export const ProductDetails = () => {
               </button>
             </form>
           </div>
-          <div className="row-sd mt-3">
-            <p className="fs-6">Description & Features</p>
-            <p className="fs-6 text-justify">{data.description}</p>
+          <div className="container">
+            <div className="row-sd mt-3">
+              <p className="fs-6">Description & Features</p>
+              <p className="fs-6 text-justify">{data.description}</p>
+            </div>
           </div>
         </div>
       )}

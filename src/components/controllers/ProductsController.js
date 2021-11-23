@@ -8,7 +8,6 @@ const ProductsController = () => {
   const { collection } = useParams();
   const context = useContext(ProductContext);
   const { data } = context[collection];
-  console.log(data);
 
   return (
     <Container>

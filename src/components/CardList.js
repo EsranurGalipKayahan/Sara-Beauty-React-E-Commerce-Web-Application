@@ -7,7 +7,7 @@ const CardList = () => {
   return (
     <ul role="list" className="-my-6 divide-y divide-gray-200">
       {cardItems.map((product) => (
-        <CardItem product={product} />
+        <CardItem key={product.id} product={product} />
       ))}
     </ul>
   );

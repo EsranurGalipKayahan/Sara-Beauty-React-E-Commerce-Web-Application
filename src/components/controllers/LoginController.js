@@ -6,19 +6,20 @@ import Logout from "../Logout";
 const LoginController = ({ login, isAuth, logout }) => {
   const location = useLocation();
   const navigate = useNavigate();
-  const auth = isAuth;
   const [email, setEmail] = useState({});
   const [password, setPassword] = useState({});
 
   const loginHandler = (e) => {
     e.preventDefault();
+
     login({ email, password });
+
     setTimeout(() => {
-      if (location?.state?.navigated)
-        navigate(location?.state?.from?.pathname, { auth });
+      if (location?.state?.navigated) navigate(location?.state?.from?.pathname);
     }, 1000);
   };
-  return auth ? (
+
+  return isAuth ? (
     <Logout logout={logout} />
   ) : (
     <Login

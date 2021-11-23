@@ -5,7 +5,7 @@ const useAuth = () => {
 
   const login = (user) => {
     setTimeout(() => {
-      if (user.email === "johndoe@gmail.com" && user.password === "12345") {
+      if (user.email === "johndoe@amail.com" && user.password === "12345") {
         setIsAuth(true);
       } else setIsAuth(false);
     }, 1000);

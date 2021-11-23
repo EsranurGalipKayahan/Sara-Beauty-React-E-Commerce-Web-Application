@@ -17,7 +17,6 @@ const CollectionItem = ({ callout }) => {
       <p className="text-base font-semibold text-gray-900">
         {callout.description}
       </p>
-      <h3 className="mt-6 text-sm text-gray-500"></h3>
     </div>
   );
 };

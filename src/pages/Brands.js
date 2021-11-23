@@ -10,10 +10,9 @@ const Brands = () => {
         <h2 className="text-2xl py-5 font-bold font-sans text-gray-900">
           Our Partners
         </h2>
-
         <Row>
           {brands.map((callout) => (
-            <BrandItem key={callout.name} callout={callout} />
+            <BrandItem key={callout.imageSrc} callout={callout} />
           ))}
         </Row>
       </div>

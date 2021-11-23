@@ -9,15 +9,15 @@ import { GEO_URL, MESSAGES } from "./data/constants";
 import { CardProvider } from "./contexts/CardContext";
 import useAuth from "./components/hooks/useAuth";
 import ProtectedRoute from "./components/routes/ProtectedRoute";
-import Search from "./pages/Search";
 import ProductsController from "./components/controllers/ProductsController";
 import LoginController from "./components/controllers/LoginController";
 import CardController from "./components/controllers/CardController";
 import Brands from "./pages/Brands";
 import Contact from "./pages/Contact";
 import Checkout from "./pages/Checkout";
-import Shop from "./pages/Shop";
 import ProductDetails from "./components/ProductDetails";
+import SearchController from "./components/controllers/SearchController";
+import CollectionController from "./components/controllers/CollectionController";
 function App() {
   const { data } = useFetch(GEO_URL);
   const [isAuth, login, logout] = useAuth(false);
@@ -47,7 +47,7 @@ function App() {
                   />
                 }
               />
-              <Route path="/shop" element={<Shop />} />
+              <Route path="/shop" element={<CollectionController />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/brands" element={<Brands />} />
               <Route
@@ -56,7 +56,7 @@ function App() {
               />
               <Route path="/:collection/:id" element={<ProductDetails />} />
               <Route path="/card" element={<CardController />} />
-              <Route path="/search" element={<Search />} />
+              <Route path="/search" element={<SearchController />} />
               <Route
                 exact
                 path="/checkout"
