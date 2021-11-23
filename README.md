@@ -33,7 +33,7 @@ Sara Cosmetic have a e-commerce web site builded with React. This web app is des
 - The user must be logged in to be able to click pay button in the card page
 - The user must communicate with Sara Cosmetics via Contact page
 
-## Nice To Have
+#### Nice To Have
 
 - The user may add the product to the liked list by being logged in
 - The user may write a review for the specific product
