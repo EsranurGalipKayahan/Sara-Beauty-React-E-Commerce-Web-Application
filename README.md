@@ -12,6 +12,7 @@ Sara Cosmetic will have a e-commerce web site builded with React. This web app i
 - The app must be a single page application
 - The app must be a e-commerce web application
 - The app retrieves cosmetics products information from [MAKE UP API](http://makeup-api.herokuapp.com/)
+- The app fetch the country that the user connects to the web application via [GEO API](https://freegeoip.app/), and changes the message in the announcement bar. 
 - The app should have categories of products
 - Each category has its own products
 - Each product must be displayed its own page
