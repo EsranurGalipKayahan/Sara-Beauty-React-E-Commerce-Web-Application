@@ -1,5 +1,5 @@
 # SARA COSMETICS 
-Sara Cosmetic will have a e-commerce web site builded with React. This web app is going to be designed by inspiring given e-commerce web applications :  [https://esqido.com/](https://esqido.com/), [https://www.100percentpure.com/](https://www.100percentpure.com/), [https://eu.muroexe.com/](https://eu.muroexe.com/), [https://ratiocoffee.com/](https://ratiocoffee.com/), [https://mugo.com.tr/](https://mugo.com.tr/).
+Sara Cosmetic have a e-commerce web site builded with React. This web app is designed by inspiring given e-commerce web applications :  [https://esqido.com/](https://esqido.com/), [https://www.100percentpure.com/](https://www.100percentpure.com/), [https://eu.muroexe.com/](https://eu.muroexe.com/), [https://ratiocoffee.com/](https://ratiocoffee.com/), [https://mugo.com.tr/](https://mugo.com.tr/).
 
 <img width="959" alt="sara" src="https://user-images.githubusercontent.com/61011249/143095846-ed92c632-5c25-4d63-ad9f-3891f35d5417.png">
 
