@@ -1,0 +1,33 @@
+[
+    {
+      "name": "bronzer",
+      "imageSrc": "/images/collections/bronzer.png",
+      "description": "Bronzer"
+    },
+    {
+      "name": "eyeliner",
+      "imageSrc": "/images/collections/eyeliner.jpg",
+      "description": "Eye Liner"
+    },
+    {
+      "name": "nail_polish",
+      "imageSrc": "/images/collections/nail-polish.png",
+      "description": "Nail Polish"
+    },
+  
+    {
+      "name": "lipstick",
+      "imageSrc": "/images/collections/lips.png",
+      "description": "Lipstick"
+    },
+    {
+      "name": "foundation",
+      "imageSrc": "/images/collections/foundation.png",
+      "description": "Foundation"
+    },
+    {
+      "name": "lip_liner",
+      "imageSrc": "/images/collections/lipliner.jpg",
+      "description": "Lip Liner"
+    }
+  ]

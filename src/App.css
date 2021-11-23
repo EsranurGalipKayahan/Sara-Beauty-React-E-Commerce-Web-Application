@@ -1,0 +1,33 @@
+body::before {
+  display: block;
+  content: '';
+  height: 60px;
+}
+.discover{
+  position: relative; 
+}
+  
+.shop-now-btn{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.announ-bar{
+  background-color: #F4DCE2;
+}
+.text-justify{ 
+  text-align: justify;
+}
+.styled-border{
+  border-bottom-style: 2px solid ;
+  border-color: #F4DCE2;   
+}
+.customized-btn,.customized-btn:hover{
+  background-color: #F4DCE2;
+}
+
+  
+  
