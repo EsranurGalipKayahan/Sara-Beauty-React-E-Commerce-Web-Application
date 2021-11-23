@@ -1,11 +1,23 @@
 # SARA COSMETICS 
 Sara Cosmetic will have a e-commerce web site builded with React. This web app is going to be designed by inspiring given e-commerce web applications :  [https://esqido.com/](https://esqido.com/), [https://www.100percentpure.com/](https://www.100percentpure.com/), [https://eu.muroexe.com/](https://eu.muroexe.com/), [https://ratiocoffee.com/](https://ratiocoffee.com/), [https://mugo.com.tr/](https://mugo.com.tr/).
 
+<img width="959" alt="sara" src="https://user-images.githubusercontent.com/61011249/143095846-ed92c632-5c25-4d63-ad9f-3891f35d5417.png">
+
 ## Project Requirements
 
 - The app needs to have multiple pages and use client-side routing
 - The app should make use of the Context API or use custom hooks
 - It should use data from a public API
+
+### To run the application
+
+- Clone the repository
+- Open the directory from VS Code
+- Run npm install
+- Get API KEY from [GEO API](https://freegeoip.app/)
+- Paste your API KEY into .env file
+- Run npm start in Terminal
+- To login (in the web application) use email : johndoe@amail.com, password : 12345
 
 ## Must Have
 
