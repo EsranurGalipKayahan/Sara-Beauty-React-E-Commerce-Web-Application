@@ -5,10 +5,16 @@ export const useFetch = (url) => {
   const [isLoading, setIsLoading] = useState(true);
   const [fetchError, setFetchError] = useState(false);
 
-  useEffect(() => {
+  /*useEffect(() => {
     callApi();
-  }, []);
-  const callApi = async () => {
+  }, []);*/
+  const controller = new AbortController();
+  const signal = controller.signal;
+  const cancelFetch = () => {
+    controller.abort();
+  };
+
+  const fetchData = async () => {
     try {
       const response = await fetch(url);
       const resData = await response.json();
@@ -20,5 +26,5 @@ export const useFetch = (url) => {
       setFetchError(true);
     }
   };
-  return { data, isLoading, setData, fetchError };
+  return { data, isLoading, setData, fetchError, fetchData, cancelFetch };
 };

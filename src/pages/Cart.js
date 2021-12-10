@@ -1,16 +1,16 @@
 import React, { useContext } from "react";
-import { CardContext } from "../contexts/CardContext";
+import { CartContext } from "../contexts/CartContext";
 import { Link } from "react-router-dom";
-import CardList from "../components/CardList";
+import CartList from "../components/CartList";
 
-const Card = ({ checkoutHandler }) => {
-  const { cardItems, getTotal } = useContext(CardContext);
+const Cart = ({ checkoutHandler }) => {
+  const { cartItems, getTotal } = useContext(CartContext);
   return (
     <div className="w-screen max-w-md">
       <div className="flex-1 py-6 overflow-y-auto px-4 sm:px-6">
         <div className="mt-8">
           <div className="flow-root ">
-            {cardItems.length > 0 ? <CardList /> : <h3>No product</h3>}
+            {cartItems.length > 0 ? <CartList /> : <h3>No product</h3>}
           </div>
         </div>
       </div>
@@ -46,4 +46,4 @@ const Card = ({ checkoutHandler }) => {
     </div>
   );
 };
-export default Card;
+export default Cart;

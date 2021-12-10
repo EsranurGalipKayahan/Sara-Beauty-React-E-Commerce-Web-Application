@@ -1,23 +1,30 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useFetch } from "./hooks/useFetch";
 import { Rating } from "@mui/material";
 import { RadioGroup } from "@headlessui/react";
-import { CardContext } from "../contexts/CardContext";
+import { CartContext } from "../contexts/CartContext";
 import { Alert, Container, Spinner } from "react-bootstrap";
 import { PRODUCT_URL } from "../data/constants";
 import { classNames } from "../helpers/utilityfuncs";
 
 export const ProductDetails = () => {
   const { id } = useParams();
-  const context = useContext(CardContext);
+  const context = useContext(CartContext);
   const [show, setShow] = useState(false);
-  const { data, isLoading } = useFetch(PRODUCT_URL + `/${id}.json`);
+  const { data, isLoading, fetchData, cancelFetch } = useFetch(
+    PRODUCT_URL + `/${id}.json`
+  );
   const [selectedColor, setSelectedColor] = useState({});
+
+  useEffect(() => {
+    fetchData();
+    return cancelFetch;
+  }, []);
 
   const onsubmit = (e) => {
     e.preventDefault();
-    context.addToCard(data);
+    context.addToCart(data);
     setShow(true);
     setTimeout(() => {
       setShow(false);
@@ -57,15 +64,14 @@ export const ProductDetails = () => {
             <h4 className="fs-3 mt-3">€{data?.price}</h4>
             <form>
               {/* Colors */}
-              <div>
+              <div className="mt-2">
                 <h4 className="text-sm text-gray-900 font-medium">Color</h4>
-
                 <RadioGroup
                   value={selectedColor}
                   onChange={setSelectedColor}
                   className="mt-4"
                 >
-                  <div className="flex items-start space-x-3 ">
+                  <div className=" items-start space-x-3 color-container ">
                     {data.product_colors?.map((color) => (
                       <RadioGroup.Option
                         key={color.colour_name}
@@ -75,13 +81,13 @@ export const ProductDetails = () => {
                             color.selectedClass,
                             active && checked ? "ring ring-offset-1" : "",
                             !active && checked ? "ring-2" : "",
-                            "-m-0.5 relative p-0.5  rounded-full flex items-center justify-center cursor-pointer focus:outline-none "
+                            " rounded-full flex  cursor-pointer focus:outline-none  "
                           )
                         }
                       >
                         <span
                           aria-hidden="true"
-                          className="h-8 w-8 border border-black border-opacity-10 rounded-full"
+                          className="h-8 w-8 border border-black border-opacity-10 rounded-full color-choices"
                           style={{
                             backgroundColor: `${color.hex_value}`,
                           }}

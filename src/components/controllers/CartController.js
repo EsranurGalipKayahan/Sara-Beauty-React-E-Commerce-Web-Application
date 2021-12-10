@@ -1,11 +1,11 @@
 import { useContext, useState } from "react";
-import { CardContext } from "../../contexts/CardContext";
+import { CartContext } from "../../contexts/CartContext";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Alert, Container } from "react-bootstrap";
-import Card from "../../pages/Card";
+import Card from "../../pages/Cart";
 
-const CardController = () => {
-  const { getTotal } = useContext(CardContext);
+const CartController = () => {
+  const { getTotal } = useContext(CartContext);
   const location = useLocation();
   const [show, setShow] = useState(false);
   const navigate = useNavigate();
@@ -40,4 +40,4 @@ const CardController = () => {
     </Container>
   );
 };
-export default CardController;
+export default CartController;

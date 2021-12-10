@@ -6,7 +6,7 @@ import { Container, Row } from "react-bootstrap";
 const Brands = () => {
   return (
     <Container>
-      <div className="grid ">
+      <div className="grid">
         <h2 className="text-2xl py-5 font-bold font-sans text-gray-900">
           Our Partners
         </h2>

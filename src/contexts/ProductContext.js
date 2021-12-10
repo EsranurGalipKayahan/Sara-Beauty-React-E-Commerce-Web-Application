@@ -22,6 +22,21 @@ export const ProductProvider = (props) => {
     foundation,
     lip_liner,
   ];
+  const fetchAllData = async () => {
+    try {
+      await Promise.all(
+        collections.map((collection) => collection.fetchData())
+      );
+      setIsDataReady(true);
+    } catch (err) {
+      setIsDataReady(false);
+      console.log("fetch err");
+    }
+  };
+  useEffect(async () => {
+    fetchAllData();
+    return collections.map((collection) => collection.cancelFetch());
+  }, []); /*
   useEffect(() => {
     if (
       !bronzer.isLoading &&
@@ -40,7 +55,7 @@ export const ProductProvider = (props) => {
     lipstick.isLoading,
     foundation.isLoading,
     lip_liner.isLoading,
-  ]);
+  ]);*/
   const searchItem = (item) => {
     const searchTerm = new RegExp(item, "i");
 

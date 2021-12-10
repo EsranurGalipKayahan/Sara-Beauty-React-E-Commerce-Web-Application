@@ -1,5 +1,4 @@
 import React from "react";
-
 import CollectionList from "../CollectionList";
 import callouts from "../../data/collections.json";
 

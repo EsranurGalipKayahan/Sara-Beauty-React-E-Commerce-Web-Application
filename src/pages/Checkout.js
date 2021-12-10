@@ -1,12 +1,13 @@
 import React, { useContext, useEffect } from "react";
 import { v4 as uuidv4 } from "uuid";
-import { CardContext } from "../contexts/CardContext";
+import { CartContext } from "../contexts/CartContext";
 import { TRACKING_URL } from "../data/constants";
 
 const Checkout = () => {
-  const { emptyCard } = useContext(CardContext);
+  const { emptyCart } = useContext(CartContext);
+
   useEffect(() => {
-    emptyCard();
+    emptyCart();
   }, []);
 
   return (
