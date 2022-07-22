@@ -4,7 +4,7 @@
   "private": true,
   "engines": {
     "node": "14.18.1",
-    "npm":"6.14.15"
+    "npm": "6.14.15"
   },
   "dependencies": {
     "@craco/craco": "^6.4.0",
@@ -15,10 +15,14 @@
     "@mui/icons-material": "^5.1.1",
     "@mui/material": "^5.1.1",
     "@mui/styled-engine-sc": "^5.1.0",
+    "@tailwindcss/aspect-ratio": "^0.3.0",
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "autoprefixer": "^9.8.8",
+    "node-fetch": "^2.6.7",
     "node-sass": "^6.0.1",
+    "postcss": "^7.0.39",
     "react": "^17.0.2",
     "react-bootstrap": "^2.0.2",
     "react-dom": "^17.0.2",
@@ -28,11 +32,8 @@
     "react-router-dom": "^6.0.2",
     "react-scripts": "4.0.3",
     "styled-components": "^5.3.3",
-    "uuid": "^8.3.2",
-    "autoprefixer": "^9.8.8",
-    "postcss": "^7.0.39",
-    "@tailwindcss/aspect-ratio": "^0.3.0",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17",
+    "uuid": "^8.3.2",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
@@ -58,5 +59,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "netlify-cli": "^10.10.2"
   }
 }
