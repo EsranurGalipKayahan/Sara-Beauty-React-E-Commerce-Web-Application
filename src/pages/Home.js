@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const Home = () => {
   return (
-    <div className="container">
+    <div className="container imgPosition">
       <img className="w-100 responsive-image" src="images/home.jpg" alt="" />
       <div className="shop-now-btn">
         <Link to="/shop">

@@ -13,7 +13,7 @@ const SearchBox = ({ termHandler, searchHandler }) => {
           className="w-2/3 py-2 border-b-2 styled-border outline-none focus:border-indigo-400"
           required
         />
-        <button type="submit">
+        <button type="submit" >
           <FiSearch />
         </button>
       </form>

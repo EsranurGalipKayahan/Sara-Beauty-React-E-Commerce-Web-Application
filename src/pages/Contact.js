@@ -1,18 +1,24 @@
-import React, { useState } from "react";
+import React, { useState,useRef } from "react";
 import { Form, Button, Container, Alert } from "react-bootstrap";
 import SendIcon from "@mui/icons-material/Send";
 
 const Contact = () => {
   const [show, setShow] = useState(false);
+    const formRef = useRef(null);
+ const handleReset = () => {
+    formRef.current.reset();
+
+  }
   const sendHandler = (e) => {
     e.preventDefault();
+    handleReset();
     setShow(true);
-    setTimeout(() => setShow(false), 5000);
+    setTimeout(() => setShow(false), 3000);
   };
   return (
     <Container className="w-50">
       {show && <Alert variant={"success"}>Message is sent successfully!</Alert>}
-      <Form onSubmit={sendHandler}>
+      <Form onSubmit={sendHandler} ref={formRef} >
         <Form.Group className="mb-3 mt-5">
           <Form.Label>Email address</Form.Label>
           <Form.Control type="email" placeholder="name@example.com" required />

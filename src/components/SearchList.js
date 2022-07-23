@@ -13,7 +13,6 @@ const SearchList = ({ results }) => {
               collection={productArr[0].product_type}
             />
           );
-        return;
       })}
     </div>
   );
