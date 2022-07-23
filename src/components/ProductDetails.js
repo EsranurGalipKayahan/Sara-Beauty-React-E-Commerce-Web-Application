@@ -71,7 +71,7 @@ export const ProductDetails = () => {
                   onChange={setSelectedColor}
                   className="mt-4"
                 >
-                  <div className=" items-start space-x-3 color-container ">
+                  <div className=" items-start  color-container" >
                     {data.product_colors?.map((color) => (
                       <RadioGroup.Option
                         key={color.colour_name}
@@ -81,13 +81,13 @@ export const ProductDetails = () => {
                             color.selectedClass,
                             active && checked ? "ring ring-offset-1" : "",
                             !active && checked ? "ring-2" : "",
-                            " rounded-full flex  cursor-pointer focus:outline-none  "
+                            " rounded-full flex  cursor-pointer focus:outline-none"
                           )
                         }
                       >
                         <span
                           aria-hidden="true"
-                          className="h-8 w-8 border border-black border-opacity-10 rounded-full color-choices"
+                          className="h-8 w-8 border border-black border-opacity-10 rounded-full"
                           style={{
                             backgroundColor: `${color.hex_value}`,
                           }}
@@ -109,7 +109,7 @@ export const ProductDetails = () => {
           </div>
           <div className="container">
             <div className="row-sd mt-3">
-              <p className="fs-6">Description & Features</p>
+              <p className="fs-6"><strong>Description & Features</strong></p>
               <p className="fs-6 text-justify">{data.description}</p>
             </div>
           </div>
